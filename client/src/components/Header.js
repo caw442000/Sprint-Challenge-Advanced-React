@@ -14,19 +14,19 @@ const Header = () => {
 
   const whiteFlag = (
     <span role="img" aria-label="white flag emoji">
-      🏳️
+      🏳️ OFF
     </span>
   );
   const darkFlag = (
     <span role="img" aria-label="black flag emoji">
-       🏴
+       🏴 ON
     </span>
   );
 
   return (
     <div className="header">
-      <h1 >Soccer Players - Google Search Rankings</h1>
-      <button onClick={toggleBtn}>Toggle For Dark Mode{darkMode ? darkFlag : whiteFlag }</button>
+      <h1>Soccer Players - Google Search Rankings</h1>
+      <button data-testid="toggle"onClick={toggleBtn}>Toggle For Dark Mode{darkMode ? darkFlag : whiteFlag }</button>
     </div>
   );
 };
