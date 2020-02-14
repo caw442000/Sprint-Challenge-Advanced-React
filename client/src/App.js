@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios'
 import Card from './components/Card'
+import Header from './components/Header'
 import logo from './logo.svg';
 import './App.css';
 
@@ -28,11 +29,13 @@ class App extends React.Component {
   render(){
 
     return (
-      <div className="App">
-        
+      <div className="container">
+        <Header />
+        <div className="cardBox">
         {this.state.players.map(player => (
           <Card key= {player.id} player={player}/>
         ))};
+        </div>
       </div>
     );
   }
