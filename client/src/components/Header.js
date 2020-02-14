@@ -12,21 +12,21 @@ const Header = () => {
     setDarkMode(!darkMode);
   };
 
-  const lightMoon = (
-    <span role="img" aria-label="light mode moon emoji">
+  const whiteFlag = (
+    <span role="img" aria-label="white flag emoji">
       🏳️
     </span>
   );
-  const darkMoon = (
-    <span role="img" aria-label="dark mode moon emoji">
+  const darkFlag = (
+    <span role="img" aria-label="black flag emoji">
        🏴
     </span>
   );
 
   return (
-    <div>
-      <h1 className="nav-title">Soccer Players - Google Search Rankings</h1>
-      <button onClick={toggleBtn}>Toggle For Dark Mode{darkMode ? darkMoon : lightMoon }</button>
+    <div className="header">
+      <h1 >Soccer Players - Google Search Rankings</h1>
+      <button onClick={toggleBtn}>Toggle For Dark Mode{darkMode ? darkFlag : whiteFlag }</button>
     </div>
   );
 };
